@@ -1,0 +1,56 @@
+body{
+    background-color: #000;
+    color: yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#curser{
+    width: 1px;
+    background-color: yellow;
+    animation: blinker 1s cubic-bezier(0, 4.1, 1, 2.3)  infinite;
+    opacity: 1;
+    overflow: hidden;
+    display: inline;
+    padding: 5px 0;
+}
+
+@keyframes blinker{
+    
+    50%{
+       opacity: 0;
+    }
+   
+}
+#contant{
+    display: flex;
+    font-size: 28px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-content: space-around;
+}
+#contant div{
+    margin: 5px;
+}
+.input-text{
+    background-color: #000;
+    color: yellow;
+    border: none;
+    font-size: 28px;
+    display: inline;
+}
+.match-word{
+    color: white;
+    font-weight: bolder;
+}
+.wrong-word{
+    color: red;
+}
+.orgin-color{
+    color: rgb(253, 151, 31);
+}
+.flex-display{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 15%;
+}
