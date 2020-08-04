@@ -7,7 +7,7 @@ function randomR(min, max) {
 for (let i = 1; i <= wordLength; i++) {
     let $wordDiv = $("<div />");
     $wordDiv.text(wordList[0][randomR(1, wordLength)]);
-    $wordDiv.attr('id', i);
+    $wordDiv.attr('id', "w"+i);
     $wordDiv.attr('class', 'word');
     $("#contant").append($wordDiv);
 
@@ -27,11 +27,11 @@ $(document).ready(function () {
     let tt;
 
     function isMatchWord(inputWord) {
-        if (inputWord == $("#" + testingWordId).text()) {
-            $("#" + testingWordId).addClass("match-word");
+        if (inputWord == $("#w" + testingWordId).text()) {
+            $("#w" + testingWordId).addClass("match-word");
             isMatch = true;
         } else {
-            $("#" + testingWordId).removeClass("match-word");
+            $("#w" + testingWordId).removeClass("match-word");
             isMatch = false;
         }
     }
@@ -70,7 +70,7 @@ $(document).ready(function () {
             else
                 wrongWordCount++;
 
-            $("#" + testingWordId).remove();
+            $("#w" + testingWordId).remove();
             console.log(textes);
             textes = "";
             testingWordId++;

@@ -1,0 +1,32 @@
+body{
+	background-color: black;
+}
+
+p{
+	width: 0ch;
+	color: palegreen ;
+	font: 400 23px black;
+	color: #00FF22FF;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.animation{
+	animation: typing 5s steps(82) forwards;
+}
+
+.funtionColor{
+	color: #0000FFFF;
+}
+.classColor{
+	color: #2B91AFFF;
+}
+
+@keyframes typing{
+
+	0%{
+		width: 0ch;
+	}
+	100%{
+		width: 82ch;
+	}
+}
