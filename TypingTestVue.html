@@ -61,7 +61,7 @@
         methods:{
             start() {
                 if (this.jsTimer == null) {
-                    this.jsTimer = setInterval(addInMsec,10);
+                    this.jsTimer = setInterval(addInMsec,100);
                 }
             }
         }
@@ -78,7 +78,7 @@
             Vtimer.sec = 0;
             document.getElementById("type-recode").textContent += Vtimer.min + "Mark Corrct:" +VwordList.corrctWord + ",Wrong:" + VwordList.wrongWord;
             clearInterval(Vtimer.jsTimer);
-            document.querySelector("body").classList.add("window-flash");
+            // document.querySelector("body").classList.add("window-flash");
             // document.querySelector("body").classList.remove("window-flash");
             Vtimer.jsTimer = null;
         }
